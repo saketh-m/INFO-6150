@@ -1,0 +1,24 @@
+*{
+    text-align:center;
+}
+body{
+    background: linear-gradient(white,orange);
+}
+.table,th,td{
+    border: 1px solid black;
+    
+}
+table.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+input[type="email"]:valid{
+    outline: 2px solid green;
+}
+input[type="email"]:invalid{
+    outline: 2px solid red;
+}

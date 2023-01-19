@@ -1,0 +1,46 @@
+*{
+    text-align: center;
+}
+audio{
+    float: center;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+video{ 
+    width: 40%;
+    height: 40%;
+    size: 5px;
+}
+body{
+    background: linear-gradient(white,orange);
+}
+input[type="email"]:valid{
+    outline: 2px solid green;
+}
+input[type="email"]:invalid{
+    outline: 2px solid red;
+}
+header{
+    display:block;
+    text-align: center;
+}
+h2 span{
+    background-color: grey;
+    color:black;
+    border: 2px solid blue;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:oblique;
+    font-weight: lighter;
+}
+input[type="url"]:valid{
+    outline: 2px solid green;
+}
+input[type="url"]:invalid{
+    outline: 2px solid red;
+}
+form{
+    padding:5px;
+}
