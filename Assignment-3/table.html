@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Also read chapter 9 from slides - Regular Expressions -->
+
+<html>
+<head>
+	<title>Table CheckList</title>
+	<link rel="stylesheet" type="text/css" href="table.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<table id="myTable">
+		<tr id="header">
+			<th></th>
+			<th>STUDENT</th>
+			<th>ADVISOR</th>
+			<th>AWARD<br/>STATUS</th>
+			<th>SEMESTER</th>
+			<th>TYPE</th>
+			<th>BUDGET<br />#</th>
+			<th>PERCENTAGE</th>
+			<th style="display: none;">DELETE</th>
+			<th style="display: none;">EDIT</th>
+		</tr>
+		<tr id="1" class="mainArea">
+			<td><input type="checkbox" onclick="check(document.getElementById(1))"/><br /><br /><img onclick="dropdown(document.getElementById(1))" src="down.png" width="25px" /></td>
+			<td>Student 1</td>
+			<td>Teacher 1</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>12345</td>
+			<td>100%</td>
+			<td style="display: none;"><button onclick="On_Delete(document.getElementById(1))">delete</button></td>
+			<td style="display: none;"><button onclick="On_Edit()">edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none" ><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr id="2" class="mainArea">
+			<td><input type="checkbox" onclick="check(document.getElementById(2))"/><br /><br /><img onclick="dropdown(document.getElementById(2))" src="down.png" width="25px" /></td>
+			<td>Student 2</td>
+			<td>Teacher 2</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>23456</td>
+			<td>100%</td>
+			<td style="display: none;"><button onclick="On_Delete(document.getElementById(2))">delete</button></td>
+			<td style="display: none;"><button onclick="On_Edit()">edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none" ><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+		<tr id="3" class="mainArea">
+			<td><input type="checkbox" onclick="check(document.getElementById(3))" /><br /><br /><img onclick="dropdown(document.getElementById(3))" src="down.png" width="25px" /></td>
+			<td>Student 3</td>
+			<td>Teacher 3</td>
+			<td>Approved</td>
+			<td>Fall</td>
+			<td>TA</td>
+			<td>34567</td>
+			<td>100%</td>
+			<td style="display: none;"><button onclick="On_Delete(document.getElementById(3))">delete</button></td>
+			<td style="display: none;"><button onclick="On_Edit()">edit</button></td>
+		</tr>
+		<tr class="dropDownTextArea" style="display:none" ><td colspan="8">
+			Advisor:<br /><br />
+			Award Details<br />
+			Summer 1-2014(TA)<br />
+			Budget Number: <br />
+			Tuition Number: <br />
+			Comments:<br /><br /><br />
+			Award Status:<br /><br /><br />
+		</td></tr>
+	</table>
+
+	<br /><br />
+	
+	<button id="button" onclick="On_Submit()" style="background-color:gray;border-color:gray;" disabled>SUBMIT SELECTED AWARDS</button>
+	<button id="add" onclick="Add_Row()">Add New Student</button>
+
+	<nav class="socialmediaicons"></nav>
+	<script src="script.js"></script>
+	
+</body>
+</html>
