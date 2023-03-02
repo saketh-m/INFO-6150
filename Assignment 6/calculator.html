@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Calculator</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+      #myTable input {
+	  margin-left: 5px;
+    }
+    #myTable {
+    	border:2px solid green;
+    	border-collapse: collapse;
+    	margin: 30px 30px 20px 40px;
+      width: 400px;
+    }
+    #myTable td, th {
+    	border:1px solid green;
+    	padding: 10px;
+    }
+    #myTable th {
+    	color: #fff;
+    	background-color: #a7c942;
+    }
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="calscript.js"> </script>
+ </head>
+ <body>
+    <div id="container">
+	 
+        <main>
+        <h2>Calculator</h2>
+        <h3 id = "user"> </h3>
+        <table id="myTable">
+          <tr>
+            <td><label for="num1">Number 1:</label></td>
+            <td><input class="input" type="text" id="num1" placeholder="Enter number 1"></td>
+          </tr>
+          <tr class="errors" id="error_num1" style="display: none; color: red;"></tr>
+          <tr>
+            <td><label for="num2">Number 2:</label></td>
+            <td><input class="input" type="text" id="num2" placeholder="Enter number 2"></td>
+          </tr>
+          <tr class="errors" id="error_num2" style="display: none; color: red;"></tr>
+          <tr>
+            <td><label for="result">Result:</label></td>
+            <td id="result"></td>
+          </tr>
+        </table>
+        <br>
+        <input type="button" class="operation" id="Addition" value="Addition">
+        <input type="button" class="operation" id="Subtraction" value="Subtraction">
+        <input type="button" class="operation" id="Multiplication" value="Multiplication">
+        <input type="button" class="operation" id="Division" value="Division">
+        <input type="button" class="operation" id="clr" value="Clear">
+        <input type="button" class="operation" id="rst" value="Reset">
+      </main>
+    </div>
+ </body>
+</hmtl>

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Stop Watch</title>
+  <style>
+    label {	float: left;
+			width: auto;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="stopwatch.js"> </script>
+ </head>
+ <body>
+    <div id="container">
+	 
+        <main>
+        <h2>Stop Watch</h2>
+        <label for="stopwatch" style="width: 75px;">StopWatch </label>
+        <label id="hrs">00:</label>
+        <label id="min">00:</label>
+        <label id="sec">00</label>
+        <br><br>
+        <input type="button" class="operation" id="start" value="Start">
+        <input type="button" class="operation" id="stop" value="Stop">
+        <input type="button" class="operation" id="reset" value="Reset">
+        </main>
+    </div>
+</body>
+</hmtl>

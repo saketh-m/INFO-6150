@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+  </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"> </script>
+ </head>
+ <body>
+    <div id="container">
+	 
+        <main>
+        <h2>Calculator</h2>
+        <h3>Enter the credentials and LogIn</h3>
+            <br><br>
+            <form id ="myForm">
+                <label for="username">User Name*:</label>
+			    <input type="text" name="username" id="username" placeholder="Enter UserName" />	
+			    <br><br>
+
+                <div class="errors" id="error_username" style="display: none; color: red;">
+                    <br><br>
+                </div>
+
+                <label for="emailId">Email Id*:</label>
+                <input type="text" name="emailId" id="emailId" placeholder="xxxx@northeastern.edu" />
+                <br><br>
+    
+                <div class="errors" id="error_emailId" style="display: none; color: red;">
+                    <br><br>
+                </div>
+
+                <label for="password">Password*:</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+                <br><br>
+
+                <div class="errors" id="error_password" style="display: none; color: red;">
+                    <br><br>
+                </div>
+
+                <input type="button" id="submit" value="Submit">
+
+                <input type="Reset" id="reset">
+                <br><br>
+             </form>
+        </main>
+    </div>
+ </body>
+</hmtl>
